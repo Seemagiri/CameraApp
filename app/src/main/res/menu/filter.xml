@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/capture"
+        android:title="Capture"
+        android:icon="@android:drawable/ic_menu_camera"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/filter0"
+        android:title="Original"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter1"
+        android:title="EdgeDectection"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter2"
+        android:title="BabyPinkFilter"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/filter3"
+        android:title="FlowerFrame"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter13"
+        android:title="Mapping"
+        app:showAsAction="never"
+        />
+
+
+</menu>
