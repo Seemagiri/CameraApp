@@ -31,7 +31,7 @@ import java.io.InputStream;
 import javax.microedition.khronos.opengles.GL10;
 
 /**
- * @author nekocode (nekocode.cn@gmail.com)
+ * @author Seemagiri (smartermeyou@gmail.com)
  */
 public class MyGLUtils {
     private static final String TAG = "MyGLUtils";

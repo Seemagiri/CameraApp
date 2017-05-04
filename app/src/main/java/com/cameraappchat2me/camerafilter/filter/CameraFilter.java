@@ -29,7 +29,7 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
 /**
- * @author nekocode (nekocode.cn@gmail.com)
+ * @author Seemagiri (smartermeyou@gmail.com)
  */
 public abstract class CameraFilter {
     static final float SQUARE_COORDS[] = {

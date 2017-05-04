@@ -22,7 +22,7 @@ import com.cameraappchat2me.camerafilter.MyGLUtils;
 import com.cameraappchat2me.camerafilter.R;
 
 /**
- * @author nekocode (nekocode.cn@gmail.com)
+ * @author Seemagiri (smartermeyou@gmail.com)
  */
 public class OriginalFilter extends CameraFilter {
     private int program;

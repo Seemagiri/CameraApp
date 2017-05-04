@@ -43,7 +43,7 @@ import javax.microedition.khronos.egl.EGLDisplay;
 import javax.microedition.khronos.egl.EGLSurface;
 
 /**
- * @author nekocode (nekocode.cn@gmail.com)
+ * @author Seemagiri (smartermeyou@gmail.com)
  */
 @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class CameraRenderer implements Runnable, TextureView.SurfaceTextureListener {

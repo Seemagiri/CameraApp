@@ -7,7 +7,7 @@ import com.cameraappchat2me.camerafilter.MyGLUtils;
 import com.cameraappchat2me.camerafilter.R;
 
 /**
- * Created by Machine Vision on 03-05-2017.
+ * @author Seemagiri (smartermeyou@gmail.com)
  */
 
 public class PinkFrame extends CameraFilter {
