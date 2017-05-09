@@ -23,20 +23,36 @@
 
     <item
         android:id="@+id/filter2"
-        android:title="BabyPinkFilter"
+        android:title="GreenFilter"
         app:showAsAction="never"
         />
 
 
     <item
         android:id="@+id/filter3"
-        android:title="FlowerFrame"
+        android:title="RedFilter"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/filter4"
+        android:title="PinkFilter"
         app:showAsAction="never"
         />
 
     <item
-        android:id="@+id/filter13"
-        android:title="Mapping"
+        android:id="@+id/filter5"
+        android:title="LightPinkFilter"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter6"
+        android:title="BlueFilter"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/filter7"
+        android:title="LightBlueFilter"
         app:showAsAction="never"
         />
 

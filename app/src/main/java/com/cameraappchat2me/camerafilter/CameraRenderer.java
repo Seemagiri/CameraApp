@@ -27,12 +27,15 @@ import android.util.Pair;
 import android.util.SparseArray;
 import android.view.TextureView;
 
-import com.cameraappchat2me.camerafilter.filter.BabyPink;
+import com.cameraappchat2me.camerafilter.filter.BlueFilter;
 import com.cameraappchat2me.camerafilter.filter.CameraFilter;
 import com.cameraappchat2me.camerafilter.filter.EdgeDetectionFilter;
-import com.cameraappchat2me.camerafilter.filter.MappingFilter;
+import com.cameraappchat2me.camerafilter.filter.GreenFilter;
+import com.cameraappchat2me.camerafilter.filter.LightBlueFilter;
+import com.cameraappchat2me.camerafilter.filter.LightPinkFilter;
 import com.cameraappchat2me.camerafilter.filter.OriginalFilter;
-import com.cameraappchat2me.camerafilter.filter.PinkFrame;
+import com.cameraappchat2me.camerafilter.filter.PinkFilter;
+import com.cameraappchat2me.camerafilter.filter.RedFilter;
 
 import java.io.IOException;
 
@@ -131,28 +134,14 @@ public class CameraRenderer implements Runnable, TextureView.SurfaceTextureListe
         // Setup camera filters map
         cameraFilterMap.append(R.id.filter0, new OriginalFilter(context));
         cameraFilterMap.append(R.id.filter1, new EdgeDetectionFilter(context));
-        cameraFilterMap.append(R.id.filter13, new MappingFilter(context));
+        cameraFilterMap.append(R.id.filter2, new GreenFilter(context));
+        cameraFilterMap.append(R.id.filter3, new RedFilter(context));
+        cameraFilterMap.append(R.id.filter4, new PinkFilter(context));
+        cameraFilterMap.append(R.id.filter5, new LightPinkFilter(context));
+        cameraFilterMap.append(R.id.filter6, new BlueFilter(context));
+        cameraFilterMap.append(R.id.filter7, new LightBlueFilter(context));
 
-        cameraFilterMap.append(R.id.filter2, new BabyPink(context));
-        cameraFilterMap.append(R.id.filter3, new PinkFrame(context));
-       /* cameraFilterMap.append(R.id.filter4, new TrianglesMosaicFilter(context));
-        cameraFilterMap.append(R.id.filter5, new LegofiedFilter(context));
-        cameraFilterMap.append(R.id.filter6, new TileMosaicFilter(context));
-        cameraFilterMap.append(R.id.filter7, new BlueorangeFilter(context));
-        cameraFilterMap.append(R.id.filter8, new ChromaticAberrationFilter(context));
-        cameraFilterMap.append(R.id.filter9, new BasicDeformFilter(context));
-        cameraFilterMap.append(R.id.filter10, new ContrastFilter(context));
-        cameraFilterMap.append(R.id.filter11, new NoiseWarpFilter(context));
-        cameraFilterMap.append(R.id.filter12, new RefractionFilter(context));
-        cameraFilterMap.append(R.id.filter13, new MappingFilter(context));
-        cameraFilterMap.append(R.id.filter14, new CrosshatchFilter(context));
-        cameraFilterMap.append(R.id.filter15, new LichtensteinEsqueFilter(context));
-        cameraFilterMap.append(R.id.filter16, new AsciiArtFilter(context));
-        cameraFilterMap.append(R.id.filter17, new MoneyFilter(context));
-        cameraFilterMap.append(R.id.filter18, new CrackedFilter(context));
-        cameraFilterMap.append(R.id.filter19, new PolygonizationFilter(context));
-        cameraFilterMap.append(R.id.filter20, new JFAVoronoiFilter(context));
-        */
+
         setSelectedFilter(selectedFilterId);
 
         // Create texture for camera preview

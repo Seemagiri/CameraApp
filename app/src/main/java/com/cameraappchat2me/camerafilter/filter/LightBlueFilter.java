@@ -7,21 +7,21 @@ import com.cameraappchat2me.camerafilter.MyGLUtils;
 import com.cameraappchat2me.camerafilter.R;
 
 /**
- * @author Seemagiri (smartermeyou@gmail.com)
+ * Created by Machine Vision on 09-05-2017.
  */
 
-public class PinkFrame extends CameraFilter {
+public class LightBlueFilter extends CameraFilter {
     private int program;
     private int texture2Id;
 
-    public PinkFrame(Context context) {
+    public LightBlueFilter(Context context) {
         super(context);
 
         // Build shaders
-        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.pink_light);
+        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.mapping);
 
         // Load the texture will need for the shader
-        texture2Id = MyGLUtils.loadTexture(context, R.raw.tex08, new int[2]);
+        texture2Id = MyGLUtils.loadTexture(context, R.raw.blue, new int[2]);
     }
 
     @Override
@@ -33,3 +33,6 @@ public class PinkFrame extends CameraFilter {
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4);
     }
 }
+
+
+
